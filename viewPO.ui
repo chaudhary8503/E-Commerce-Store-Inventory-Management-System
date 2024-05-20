@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>511</width>
+    <height>335</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow{
+	background-color: rgb(0,0,0);
+}
+
+QMenuBar{
+background-color: rgb(0,0,0);
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>10</y>
+      <width>451</width>
+      <height>281</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Calibri</family>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QGroupBox {
+    background-color: rgb(0,0,0);
+    border: 1px solid white;
+    color: white; 
+}</string>
+    </property>
+    <property name="title">
+     <string>PO Details</string>
+    </property>
+    <widget class="QTableWidget" name="viewOrderTable">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>60</y>
+       <width>421</width>
+       <height>171</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Calibri</family>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QTableWidget{
+	background-color: rgb(0,0,0);
+	gridline-color: rgb(255, 255, 255);
+	color: rgb(255,255,255);
+	border-radius: 10px;
+	border: 2px solid rgb(255,255,255);
+	selection-background-color: rgb(46, 46, 62);
+}</string>
+     </property>
+     <column>
+      <property name="text">
+       <string>PO Number</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>ItemID</string>
+      </property>
+      <property name="font">
+       <font>
+        <family>Calibri</family>
+        <pointsize>10</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Price Per Unit</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Quantity Bought</string>
+      </property>
+     </column>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>30</y>
+       <width>81</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Calibri</family>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel{
+	color: #FFF;
+}</string>
+     </property>
+     <property name="text">
+      <string>SupplierID:</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="viewCustomerIDLine">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>30</y>
+       <width>141</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLineEdit{
+	border: 2px solid rgb(37, 39, 48);
+	border-radius: 100px;
+	color: #FFF;
+	background-color: rgb(30, 30, 40);
+
+}
+
+QLineEdit:hover{
+	border: 2px solid rgb(53, 53, 71)
+}
+
+QLineEdit: focus{
+	border: 2px solid rgb(85, 170, 255);
+}</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="viewExitButton">
+     <property name="geometry">
+      <rect>
+       <x>370</x>
+       <y>240</y>
+       <width>71</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+	border: 2px solid rgb(37, 39, 48);
+	border-radius: 100px;
+	color: #FFF;
+	background-color: rgb(30, 30, 40);
+	
+}
+
+QPushButton:hover{
+	border: 2px solid rgb(53, 53, 71)
+}</string>
+     </property>
+     <property name="text">
+      <string>Exit</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>511</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

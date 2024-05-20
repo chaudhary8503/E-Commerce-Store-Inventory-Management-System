@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>886</width>
+    <height>500</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow{
+	background-color: rgb(20,20,20);
+}
+
+QMenuBar{
+background-color: rgb(20,20,20);
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="exitButton">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>340</y>
+      <width>201</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Calibri</family>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <italic>true</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	border: 2px solid rgb(37, 39, 48);
+	border-radius: 100px;
+	color: #FFF;
+	background-color: rgb(30, 30, 40);
+	padding-left: 18px;
+	padding-right: 20px;
+}
+
+QPushButton:hover{
+	border: 2px solid rgb(53, 53, 71)
+}</string>
+    </property>
+    <property name="text">
+     <string>Exit</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="itemButton">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>160</y>
+      <width>191</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Calibri</family>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <italic>true</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	border: 2px solid rgb(37, 39, 48);
+	border-radius: 100px;
+	color: #FFF;
+	background-color: rgb(30, 30, 40);
+	padding-left: 18px;
+	padding-right: 20px;
+}
+
+QPushButton:hover{
+	border: 2px solid rgb(53, 53, 71)
+}</string>
+    </property>
+    <property name="text">
+     <string>Items</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="suppliersButton">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>250</y>
+      <width>191</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Calibri</family>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <italic>true</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	border: 2px solid rgb(37, 39, 48);
+	border-radius: 100px;
+	color: #FFF;
+	background-color: rgb(30, 30, 40);
+	padding-left: 18px;
+	padding-right: 20px;
+}
+
+QPushButton:hover{
+	border: 2px solid rgb(53, 53, 71)
+}</string>
+    </property>
+    <property name="text">
+     <string>Suppliers</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="customersButton">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>160</y>
+      <width>201</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Calibri</family>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <italic>true</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	border: 2px solid rgb(37, 39, 48);
+	border-radius: 100px;
+	color: #FFF;
+	background-color: rgb(30, 30, 40);
+	padding-left: 18px;
+	padding-right: 20px;
+}
+
+QPushButton:hover{
+	border: 2px solid rgb(53, 53, 71)
+}</string>
+    </property>
+    <property name="text">
+     <string>Customers</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="orderButton">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>340</y>
+      <width>191</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Calibri</family>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <italic>true</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	border: 2px solid rgb(37, 39, 48);
+	border-radius: 100px;
+	color: #FFF;
+	background-color: rgb(30, 30, 40);
+	padding-left: 18px;
+	padding-right: 20px;
+}
+
+QPushButton:hover{
+	border: 2px solid rgb(53, 53, 71)
+}</string>
+    </property>
+    <property name="text">
+     <string>Orders</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="poButton">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>250</y>
+      <width>201</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Calibri</family>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <italic>true</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	border: 2px solid rgb(37, 39, 48);
+	border-radius: 100px;
+	color: #FFF;
+	background-color: rgb(30, 30, 40);
+	padding-left: 18px;
+	padding-right: 20px;
+}
+
+QPushButton:hover{
+	border: 2px solid rgb(53, 53, 71)
+}</string>
+    </property>
+    <property name="text">
+     <string>Purchase Orders</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>70</y>
+      <width>641</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Goudy Stout</family>
+      <pointsize>20</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{
+	color: #FFF;
+	padding-left: 20px;
+	padding-right: 10px;
+}</string>
+    </property>
+    <property name="text">
+     <string>Welcome to Solasta</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>-20</y>
+      <width>811</width>
+      <height>491</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>:/newPrefix/Pictures/qtdesignerpic.jpg</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="Line" name="line">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>310</y>
+      <width>711</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="Line" name="line_2">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>210</y>
+      <width>711</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="Line" name="line_3">
+    <property name="geometry">
+     <rect>
+      <x>450</x>
+      <y>130</y>
+      <width>16</width>
+      <height>291</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <zorder>label_2</zorder>
+   <zorder>exitButton</zorder>
+   <zorder>itemButton</zorder>
+   <zorder>suppliersButton</zorder>
+   <zorder>customersButton</zorder>
+   <zorder>orderButton</zorder>
+   <zorder>poButton</zorder>
+   <zorder>label</zorder>
+   <zorder>line</zorder>
+   <zorder>line_2</zorder>
+   <zorder>line_3</zorder>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>886</width>
+     <height>18</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources>
+  <include location="../test.qrc"/>
+ </resources>
+ <connections/>
+</ui>
